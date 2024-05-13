@@ -28,6 +28,13 @@ export default async function Navbar() {
       >
         Movies
       </Link>
+
+      <Link
+        href="/lazyImage"
+        className="hover:text-pink-700 hover:underline transition-all"
+      >
+        Image
+      </Link>
     </nav>
   );
 }

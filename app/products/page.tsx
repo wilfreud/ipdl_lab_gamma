@@ -23,14 +23,12 @@ export default async function Products() {
         <div>
           {productLIst.map((product) => {
             return (
-              <ul key={product.description}>
+              <ul key={Math.random() - Math.random() * 83}>
                 {productLIst.map((product) => {
                   return (
-                    <li key={product.name}>
-                      <h1>
-                        {product.name}
-                        <p className="text-pink-800">(${product.price})</p>
-                      </h1>
+                    <li key={Math.random() - Math.random() * 82}>
+                      {product.name}
+                      <span className="text-pink-800">(${product.price})</span>
                     </li>
                   );
                 })}
